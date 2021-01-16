@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=pt-BR>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guias estelares - Thead complexa</title>
+</head>
+
+<body>
+  <table>
+    <caption>Melhores Lojas Esportivas</caption>
+
+    <colgroup>
+      <col>
+      <col span="2" style="background-color: red;">
+      <col span="2" style="background-color: blue;">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th rowspan="2"></th>
+        <!--rowspan ocupando 2 linhas-->
+
+        <th colspan="2" scope="colgroup">Adidas</th>
+        <th colspan="2" scope="colgroup">Nike</th>
+        <!--colspan ocupando 2 colunas-->
+
+      </tr>
+
+      <tr>
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+        <th scope="col">Produzidos</th>scopescope scope="col"
+        <th scope="col">Vendidos</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">Tênis</th>
+        <td>50</td>
+        <td>42</td>
+        <td>60</td>
+        <td>48</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Chuteira</th>
+        <td>550</td>
+        <td>420</td>
+        <td>600</td>
+        <td>490</td>
+      </tr>
+    </tbody>
+
+
+
+
+  </table>
+
+</body>
+
+</html>
