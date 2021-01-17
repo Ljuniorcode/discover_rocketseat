@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guias estelares - css</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <p>usar o https://codepen.io/pen/</p>
+  <h1>Aprendendo CSS</h1>
+  <ul>
+    <li>Global: *</li>
+    <li>Element / Type selector `h1, h2, p, div`</li>
+    <li>ID Selector `#box, #container`</li>
+    <li>Class Selector `.red, .m-4`</li>
+    <li>Attribute selector, Pseudo-class, Pseudo-element e outros</li>
+  </ul>
+
+  <h2>Box Model</h2>
+  <ul>
+    <li>margin: espaço da caixa do lado de fora</li>
+    <li>pading: espaço interno da caixa</li>
+    <li>border: borda da caixa: ex: 2px solid red</li>
+  </ul>
+
+  <h2>Caixas</h2>
+  <p>
+    Quase tudo são caixas, posicionamentos, tamanhos, <br />espaçamentos, bordas,
+    cores, podem ficar uma ao lado da outra, ou acima, elementos HTML são caixas
+  </p>
+
+  <h2>Importando fontes no css</h2>
+  <p>Criar o arquivo styles.css separado do html</p>
+  <p>@import url('https://fonts.googleapi....')</p>
+
+  <h2>Cascata</h2>
+  <p>É Lido de cima pra baixo e levado em conta 3 fatores</p>
+  <ol>
+    <li>Origem do estilo</li>
+    <li>Especificidade</li>
+    <li>Importância</li>
+  </ol>
+
+  <h3>Origem do estilo</h3>
+  <p>inline > tag style > tag link</p>
+
+  <h3>Cascata</h3>
+  <p>a leitura das configs vem de cima pra baixo</p>
+  <ul>
+    <li>1º: style dentro da tag &lt h1 style='color:red; &gt é a mais forte</li>
+    <li>2º: dentro da tag &lt;styles&gt;</li>
+    <li>3º: arquivo externo styles.css</li>
+  </ul>
+
+  <h2>Especificidade</h2>
+  <ul>
+    <li>classes: intermediário</li>
+    <li>id: mais forte</li>
+    <li>tag &lt;qualquer&gt; é o mais fraco</li>
+  </ul>
+
+  <h2>regra !important</h2>
+  <p>sobrescreve tudo que você colocou nas outras configs</p>
+
+  <h2>Outras regras</h2>
+  <ul>
+    <li>@import - inclui um css externo</li>
+    <li>@media - regras condicionais para dispositivos</li>
+    <li>@font-face - fontes externas</li>
+    <li>@keyframes - animações</li>
+  </ul>
+
+  <h2>Vendor prefixes</h2>
+  <p>permite que os browsers adicione 'features'</p>
+  <ul>
+    <li>-webkit-background-clip: text (chrome, safari, ios e android)</li>
+    <li>-moz-background-clip: text (mozilla firefox)</li>
+    <li>-ms-background-clip: text (internet explorer)</li>
+    <li>-o-background-clip: text (opera)</li>
+  </ul>
+  <a href="http://caniuse.com" target="_blank">Caniuse</a>
+</body>
+
+</html>
