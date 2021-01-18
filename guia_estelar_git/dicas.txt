@@ -1,0 +1,67 @@
+COMANDOS BÁSICOS PARA CONSULTA
+
+##git init 
+inicializa o init no diretório
+
+##git add . ou git add nome-do-arquivo
+adiciona todos os arquivos ou apenas um
+
+##git commmit -m 'sua mensagem'
+comitando todos os arquivos
+
+##git push
+enviando para o github
+
+##git status
+verifica o estado dos arquivos
+
+##git log --online
+verificando os logs em detalhes
+
+##git diff
+verificando modificaçoes ao longo do tempo
+obs: se aparecer o menos (-) indica remoção de linha
+se aparecer (+) indica linhas adicionadas
+
+##git restore --staged nome-do-arquivo
+retirar doc da opção de ser comitado
+
+##git rm nome-do-arquivo
+deletando arquivos
+
+##git mv arquivo_Atual arquivo_Novo_Nome
+renomeando arquivos
+
+##git mv arquivo_Atual outroDiretorio/arquivo_Atual
+movendo arquivos de diretório
+
+##git restore nome_Do_Arquivo
+desfazer modificações
+
+##git restore --staged . ou git reset HEAD .
+desfazer alteração qdo inserimos o arquino no stage area
+com comando git add nome_Arquivo, usar o git status para consultar
+
+##git commit --amend -m 'nova mensagem'
+corrigindo mensagem do último commit
+
+##git checkout a05896f -- nomeArquivo
+recuperando arquivos após comitar, usar o git log --oneline
+para buscar o arquivo pelo hash, 
+obs: traz o arquivo para o momento atual através desse hash de commit
+
+##git clean -n ou git clean -f usado para forçar o delete
+removendo arquivos para sempre que não estão sendo rastreados pelo github
+obs: é como se fosse um rm -rf arquivo
+
+##git revert HEAD~5 
+revertendo um commit, traz um ou mais arquivos do histórico
+ou usar o comando git log --oneline para copiar o hash e 
+depois: git revert a05896f
+
+
+##git commit -am 'arquivo modificado'
+adicionando arquivos e já inserindo nota no commit
+
+##criar o .gitignore e inserir o nome dos arquivos
+ignorando arquivos e diretórios indesejados
