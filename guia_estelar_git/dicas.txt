@@ -64,4 +64,5 @@ depois: git revert a05896f
 adicionando arquivos e já inserindo nota no commit
 
 ##criar o .gitignore e inserir o nome dos arquivos
-ignorando arquivos e diretórios indesejados
+##git rm -r --cached . retirando todos os arquivos do monitoramento do git
+obs: após inserir o arquivo no .gitignore ele não será mais rastreado pelo git
